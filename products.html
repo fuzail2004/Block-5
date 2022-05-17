@@ -55,28 +55,28 @@
 		     <div class="product-container">
 					<div class="product">
 						<h1 class="productname"><center>Samsung Galaxy A12</center></h1>
-						<img src="pictures/samsung galaxy A12.png" alt="Product Image" width="150px"height="200px">
+						<img class="productimage1" src="pictures/samsung galaxy A12.png" alt="Product Image" width="150px"height="200px">
 						<h1 class="text1"><center>A12 (64GB ROM, 4GB RAM, SM-A125FZKGINS, Black)</center></h1>
 						<h1 class="price"><center>£199</center></h1>
 						<button class="addtocart">Add To Cart</button>
 			        </div>
 					<div class="product">
 						<h1 class="productname"><center>Realme X7 Max </h1></center>
-							<img src="pictures/realme s7.png" alt="Product Image"width="150px"height="200px">
+							<img class="productimage1" src="pictures/realme s7.png" alt="Product Image"width="150px"height="200px">
 							<h1 class="text1"><center>(128GB ROM, 8GB RAM, RMX3031, Asteroid Black)</center></h1>
 							<h1 class="price"><center>£129.50</h1></center>
 							<button class="addtocart">Add To Cart</button>
 					</div>
 					<div class="product">
 						<h1 class="productname"><center>Vivo Y20A</h1></center>
-							<img src="pictures/vivoy20a.png" alt="Product Image"width="150px"height="200px">
+							<img class="productimage1" src="pictures/vivoy20a.png" alt="Product Image"width="150px"height="200px">
 							<h1 class="text1"><center> (64GB ROM, 3GB RAM, Nebula Blue).</h1></center>
 							<h1 class="price"><center>£175</h1></center>
 							<button class="addtocart">Add To Cart</button>
 					</div>
 					<div class="product">
 					     <h1 class="productname"><center>Vivo Y73 </h1></center>
-					     <img src="pictures/vivoy73.png" alt="Product Image"width="150px"height="200px">
+					     <img class="productimage1" src="pictures/vivoy73.png" alt="Product Image"width="150px"height="200px">
 					     <h1 class="text1"><center>(128GB ROM, 8GB RAM, PD2078F_IN, Diamond Flare)</center></h1>
 						 <h1 class="price"><center>£7.50</center></h1>
 						 <button class="addtocart">Add To Cart</button>
@@ -110,10 +110,15 @@
 							
 							<div class="cart-buttons">  
 								<button id="emptycart">Empty Cart</button>
-								<button class="box" onclick="myFunction1()">cheak out</button>
+
 				
 							</div>
 							
+							<div class="cart-buttons">  
+								<button id="check out"></button>
+								<button id="box1" onclick="myFunction1()">check out</button>
+				
+							</div>
 							<div id="checkoutDiv"  style="display:none;" class="answer_list" >
 								<br><br><br><br>
 								<h4 style="text-align:center;"><strong>Checkout Now</strong></h4>
@@ -187,44 +192,43 @@
 
 <section class="footer">
 
-    <div class="box-container">
+	<div class="box-container">
 
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="home.html">home</a>
-            <a href="about.html">about</a>
-            <a href="products.html">products</a>
-            <a href="review.html">review</a>
-            <a href="contact.html">contact</a>
-        </div>
+		<div class="box">
+			<h3>quick links</h3>
+			<a href="home.html">home</a>
+			<a href="about.html">about</a>
+			<a href="products.html">products</a>
+			<a href="review.html">review</a>
+			<a href="contact.html">contact</a>
+		</div>
 
-        <div class="box">
-            <h3>extra links</h3>
-            <a>my account</a>
-            <a>my order</a>
-            <a href="#">my favorite</a>
-        </div>
+		<div class="box">
+			<h3>extra links</h3>
+			<a>my account</a>
+			<a>my order</a>
+			<a href="#">my favorite</a>
+		</div>
 
-        <div class="box">
-            <h3>locations</h3>
-            <a href="https://www.bing.com/maps?q=sk+mobiles+bharuch&FORM=HDRSC6">bharuch</a>
-            <a href="https://www.bing.com/maps?q=sk+mobiles+delhi&FORM=HDRSC6">delhi</a>
-            <a href="https://www.mapsofindia.com/maps/gujarat/surat.htm">surat</a>
-            <a href="https://www.bing.com/maps?q=sk+mobile+mumbai&FORM=HDRSC6">mumbai</a>
-        </div>
+		<div class="box">
+			<h3>locations</h3>
+			<a href="https://www.bing.com/maps?q=sk+mobiles+bharuch&FORM=HDRSC6">bharuch</a>
+			<a href="https://www.bing.com/maps?q=sk+mobiles+delhi&FORM=HDRSC6">delhi</a>
+			<a href="https://www.bing.com/maps?q=sk+mobiles+surat&FORM=HDRSC6">surat</a>
+			<a href="https://www.bing.com/maps?q=sk+mobile+mumbai&FORM=HDRSC6">mumbai</a>
+		</div>
 
-        <div class="box">
-            <h3>contact info</h3>
-            <a>+919316195445</a>
-            <a>sk.ind.com</a>
-            <a>s.k nagar socity,<br>
+		<div class="box">
+			<h3>contact info</h3>
+			<a>+919316195445</a>
+			<a>sk.ind.com</a>
+			<a>s.k nagar socity,<br>
 				palej.bharuch, india - 392220</a>
-        </div>
+		</div>
 
-    </div>
+	</div>
 
-    <div class="credit"> created by <span> mr fuzail bhagat</span> | all rights reserved </div>
+	<div class="credit"> created by <span> mr fuzail bhagat</span> | all rights reserved </div>
 
 </section>
-
-<!-- footer section ends-->
+<script src="js/cart/script.js"></script>
