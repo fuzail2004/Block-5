@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.K COLLECTION</title>
+
+    <!-- bootstrap link  -->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+<!-- navbar section start-->
+<header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a class="logo">S.K.LTD<span>.</span></a>
+
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="about.html">about</a>
+        <a href="products.html">phones</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="icons">
+        <a href="#cart-container" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-user"></a>
+    </div>
+
+</header>
+
+<!-- navbar section ends-->
+
+
+<!-- product section start-->
+
+<section class="products" id="products" style="margin-top:100px";>
+<h1 class="heading"> mobile phones </h1>
+<h1><center>ITEMS FOR SALE</center></h1>
+
+	<div id="alerts"></div>
+		<div class="productcont">
+					
+		     <div class="product-container">
+					<div class="product">
+						<h1 class="productname"><center>Samsung Galaxy A12</center></h1>
+						<img class="productimage1" src="pictures/samsung galaxy A12.png" alt="Product Image" width="150px"height="200px">
+						<h1 class="text1"><center>A12 (64GB ROM, 4GB RAM, SM-A125FZKGINS, Black)</center></h1>
+						<h1 class="price"><center>£199</center></h1>
+						<button class="addtocart">Add To Cart</button>
+			        </div>
+					<div class="product">
+						<h1 class="productname"><center>Realme X7 Max </h1></center>
+							<img class="productimage1" src="pictures/realme s7.png" alt="Product Image"width="150px"height="200px">
+							<h1 class="text1"><center>(128GB ROM, 8GB RAM, RMX3031, Asteroid Black)</center></h1>
+							<h1 class="price"><center>£129.50</h1></center>
+							<button class="addtocart">Add To Cart</button>
+					</div>
+					<div class="product">
+						<h1 class="productname"><center>Vivo Y20A</h1></center>
+							<img class="productimage1" src="pictures/vivoy20a.png" alt="Product Image"width="150px"height="200px">
+							<h1 class="text1"><center> (64GB ROM, 3GB RAM, Nebula Blue).</h1></center>
+							<h1 class="price"><center>£175</h1></center>
+							<button class="addtocart">Add To Cart</button>
+					</div>
+					<div class="product">
+					     <h1 class="productname"><center>Vivo Y73 </h1></center>
+					     <img class="productimage1" src="pictures/vivoy73.png" alt="Product Image"width="150px"height="200px">
+					     <h1 class="text1"><center>(128GB ROM, 8GB RAM, PD2078F_IN, Diamond Flare)</center></h1>
+						 <h1 class="price"><center>£7.50</center></h1>
+						 <button class="addtocart">Add To Cart</button>
+					</div>
+			 </div>
+						
+						<div id="cart-container" style="margin: top 50px;";>
+						  <h2>Cart</h2>
+						  <table>
+							<thead>
+							  <tr>
+							  <th><strong>Product</strong></th>
+							  <th><strong>Price</strong></th>
+							</tr>
+							</thead>
+							<tbody id="carttable">
+							</tbody>
+						  </table>
+						  <hr>
+						  <table id="carttotals">
+							<tr>
+							  <td><strong>Items</strong></td>
+							  <td><strong>Total</strong></td>
+							</tr>
+							<tr>
+							  <td>x <span id="itemsquantity">0</span></td>
+							 
+							  <td>£<span id="total">0</span></td>
+							</tr></table>
+
+							
+							<div class="cart-buttons">  
+								<button id="emptycart">Empty Cart</button>
+
+				
+							</div>
+							
+							<div class="cart-buttons">  
+								<button id="check out"></button>
+								<button id="box1" onclick="myFunction1()">check out</button>
+				
+							</div>
+							<div id="checkoutDiv"  style="display:none;" class="answer_list" >
+								<br><br><br><br>
+								<h4 style="text-align:center;"><strong>Checkout Now</strong></h4>
+									<form name="myform" method="post" action="sent.html" >
+										<ul>
+											<li>
+												<!-- Create a name field -->
+												<label>Full Name:</label>
+												<input type="text" name="name" />
+											</li>
+											<br><br>
+											<li>
+												<!-- Create an email field -->
+												<label>E-mail:</label>
+												<input type="email" name="email" />
+											</li>
+											<br><br>
+											<li>
+												<!-- Create a message field -->
+												<label>Billing Address:</label>
+												<textarea name="message" ></textarea>
+											</li>
+											<br><br>
+											<li>
+												<!-- Create a message field -->
+												<label>Shipping Address:</label>
+												<textarea name="message" ></textarea>
+											</li>
+											<br><br>
+											<p>Contratulations this order is free as this is a sandbox website.</p>
+											<li>
+												<!-- Create a submit button -->
+												<input type="submit" value="Checkout Now"> 
+											</li>
+										</ul>
+									<!-- Close the form tag -->
+									</form>
+							</div>
+						</div>
+					</div>
+					<script src="js/javascript.js"></script>
+
+
+
+
+
+
+
+
+
+
+</div>
+<!-- partial -->
+
+   <!-- END EDMO HTML (Happy Coding!)-->
+</main>
+
+    
+<footer class="credit">Author: Jasmine Smalley - Distributed By: <a title="Awesome web design code & scripts" href="https://www.codehim.com?source=demo-page" target="_blank">CodeHim</a></footer>
+
+      <script  src="./js/script.js"></script>
+
+</section>
+
+     <!--end of department of mobile cases-->
+
+<!-- products section ends-->
+
+
+<!-- footer section start-->
+
+<section class="footer">
+
+	<div class="box-container">
+
+		<div class="box">
+			<h3>quick links</h3>
+			<a href="home.html">home</a>
+			<a href="about.html">about</a>
+			<a href="products.html">products</a>
+			<a href="review.html">review</a>
+			<a href="contact.html">contact</a>
+		</div>
+
+		<div class="box">
+			<h3>extra links</h3>
+			<a>my account</a>
+			<a>my order</a>
+			<a href="#">my favorite</a>
+		</div>
+
+		<div class="box">
+			<h3>locations</h3>
+			<a href="https://www.bing.com/maps?q=sk+mobiles+bharuch&FORM=HDRSC6">bharuch</a>
+			<a href="https://www.bing.com/maps?q=sk+mobiles+delhi&FORM=HDRSC6">delhi</a>
+			<a href="https://www.bing.com/maps?q=sk+mobiles+surat&FORM=HDRSC6">surat</a>
+			<a href="https://www.bing.com/maps?q=sk+mobile+mumbai&FORM=HDRSC6">mumbai</a>
+		</div>
+
+		<div class="box">
+			<h3>contact info</h3>
+			<a>+919316195445</a>
+			<a>sk.ind.com</a>
+			<a>s.k nagar socity,<br>
+				palej.bharuch, india - 392220</a>
+		</div>
+
+	</div>
+
+	<div class="credit"> created by <span> mr fuzail bhagat</span> | all rights reserved </div>
+
+</section>
+<script src="js/cart/script.js"></script>
